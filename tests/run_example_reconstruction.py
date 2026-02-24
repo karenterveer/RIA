@@ -5,7 +5,13 @@ Example-data reconstruction test for the RIA package.
 
 Loads pre-extracted example data (positions, fluences, timings, noise)
 from ``tests/example_data/`` and reconstructs using ``ria.reconstruct()``.
-The example data was generated once from a real CoREAS simulation.
+The example data was generated once from a real CoREAS simulation, with
+measured noise applied at a voltage level.
+
+Both fluence and noise was calculated over a 300ns window around the 
+signal peak. The noise level is the mean fluence from multiple 
+non-overlapping noise windows, and the noise std is the standard deviation 
+of those noise fluences.
 
 Can be run standalone::
 
