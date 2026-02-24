@@ -18,8 +18,8 @@ of established tools:
 ## Features
 
 - **Atmosphere model** — five-layer parametric atmosphere with GDAS support
-- **Coordinate transforms** — JAX-differentiable geographic ↔ shower-plane transforms
-- **Lateral distribution function** — calibrated B-spline parametrisations (geomagnetic + charge-excess)
+- **Coordinate transforms** — JAX-differentiable ground ↔ shower-plane transforms
+- **Lateral distribution function** — B-spline parametrisations (geomagnetic + charge-excess)
 - **Forward model** — combined LDF + hyperbolic wavefront timing, integrated with NIFTy8 correlated fields
 - **Timing quality control** — per-station outlier detection, iterative pruning, local uncertainty estimation
 - **Bayesian inference** — high-level `reconstruct()` wrapper around `jft.optimize_kl`
